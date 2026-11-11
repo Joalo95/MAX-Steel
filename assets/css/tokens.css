@@ -1,0 +1,17 @@
+:root {
+  color-scheme: dark;
+  --navy: #172D4D;
+  --ivory: #F4F1EA;
+  --gold: #B58A45;
+  --bg: var(--navy);
+  --panel: #203a5b;
+  --ink: var(--ivory);
+  --steel: #8799b1;
+  --steel-2: #c3ccda;
+  --line: rgba(244, 241, 234, .2);
+  --go: var(--gold);
+  --go-ink: var(--navy);
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

@@ -1,0 +1,28 @@
+# MAX-Steel
+
+Sitio web estático para presentar modelos de viviendas de steel framing, sus especificaciones y el visualizador 3D.
+
+## Contenido
+
+- `modular-steel.html`: página principal.
+- `assets/`: estilos, scripts, imágenes y contenido técnico de MAX.
+- `models3D/`: modelos GLB y texturas utilizados por el visualizador.
+- `robots.txt`: directivas para rastreadores web.
+
+La carpeta `documents/` se mantiene fuera del repositorio mediante `.gitignore`.
+
+## Ejecución local
+
+Sirve la carpeta raíz con un servidor HTTP local, por ejemplo:
+
+```powershell
+python -m http.server 8000
+```
+
+Luego abre `http://localhost:8000/modular-steel.html`.
+
+El visor 3D carga sus dependencias y el modelo seleccionado cuando se solicita desde la página. El rendimiento de esa vista depende del dispositivo y navegador del visitante.
+
+## Publicación
+
+El proyecto puede publicarse como sitio estático en servicios como GitHub Pages o Vercel. Publica el contenido de la raíz del proyecto y conserva las rutas relativas de `assets/` y `models3D/`.

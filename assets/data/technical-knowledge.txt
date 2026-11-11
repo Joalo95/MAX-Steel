@@ -1,0 +1,55 @@
+## Dimensiones de los modelos
+Fuente: Datos técnicos publicados en la sección Modelos de modular-steel.html.
+El monoambiente de 25 m² mide 7,66 × 3,26 m en sus dimensiones generales. El modelo de 1 dormitorio y 45 m² mide 10,45 × 4,46 m. El modelo de 2 dormitorios y 65 m² mide 12,06 × 6,06 m. Las medidas interiores, distribución y alturas se detallan en la ficha de cada modelo del sitio. Para construir, prevalecen los planos aprobados del proyecto.
+
+## Dimensiones de ambientes
+Fuente: Fichas de modelos publicadas en modular-steel.html.
+Monoambiente: cocina-estar-dormitorio 5,83 × 2,98 m; baño 1,44 × 2,98 m. Modelo de 1 dormitorio: cocina-estar-comedor 5,83 × 3,84 m; dormitorio 4,23 × 2,64 m; baño 3,02 × 1,42 m. Modelo de 2 dormitorios: cocina-comedor-estar 6,31 × 5,08 m; dormitorios 3,85 × 2,68 m y 3,85 × 2,65 m; baño 1,48 × 2,68 m. El área de cada ambiente puede estimarse multiplicando largo × ancho; es un cálculo geométrico aproximado basado en las medidas publicadas, no reemplaza los planos.
+
+## Peso total de los modelos
+Fuente: Fichas técnicas publicadas en modular-steel.html y manuales de productos disponibles.
+La información publicada no especifica el peso total de la vivienda completa para el monoambiente ni para los modelos de 45 y 65 m². Los valores en kg/m² que aparecen en los manuales corresponden a ensamblajes específicos, como tipos de muro, techo o entrepiso; no son el peso total de una vivienda. Para obtener el peso del conjunto se requiere el desglose de materiales y el cálculo correspondiente al proyecto.
+
+## Modelos y distribuciones
+Fuente: Datos técnicos publicados en la sección Modelos de modular-steel.html.
+El monoambiente tiene 25 m² e incluye cocina-estar-dormitorio y baño. El modelo de 1 dormitorio tiene 45 m² y el de 2 dormitorios tiene 65 m². El monoambiente se describe con techo inclinado de chapa; los modelos de 45 y 65 m², con techo plano de hormigón alivianado. Para construir, prevalecen los planos aprobados del proyecto.
+
+## Perfiles de acero galvanizado
+Fuente: modular-steel.html, sección El perfil; Manual de armado, páginas 4–7 y 10.
+El sistema publicado utiliza perfiles estructurales de acero galvanizado conformados en frío, sección C (PGC), con paneles de 89 mm de espesor. La sección indicada es alma de 89 mm, ala de 41 mm y labio de 10 mm; el calibre publicado varía entre 0,89 y 1,2 mm. Se informa tensión de fluencia de 250 MPa para la serie estándar y 350 MPa para la serie plus, con recubrimiento Z275 o Aluzinc AZ150. El manual muestra además un ejemplo de perfil PGC 90 de 0,89 mm; las dimensiones y resistencias aplicables deben verificarse en los planos y especificaciones del proyecto, no extrapolarse desde un ejemplo.
+
+## Paneles, montantes y tornillos
+Fuente: Manual de armado, páginas 6, 13–14; modular-steel.html, sección Cómo trabaja MAX-Steel.
+Los paneles se componen de perfiles identificados por pieza y panel, unidos con los tornillos especificados para el proyecto. La separación y orientación de los montantes se debe respetar según el plano porque afecta la capacidad portante. La estructura prefabricada ya trae las operaciones previstas para el montaje: el manual indica no cortarla ni perforarla en obra y usar los tornillos provistos. No sustituir tornillos ni cambiar perfiles sin aprobación técnica.
+
+## Preparación de base y montaje
+Fuente: Manual de armado, páginas 16–18; modular-steel.html, sección Montaje en obra.
+Antes del montaje, la base debe ser plana, nivelada, escuadrada, limpia y compatible con las dimensiones del proyecto. El replanteo se realiza con los planos de montaje y se coloca separador antivibratorio entre la base y las soleras. Durante el armado se verifican diagonales, escuadra, plomo y nivel; se apuntalan los paneles hasta rigidizar el conjunto. El manual describe como criterio general ubicar primero anclajes en esquinas y vanos, con una referencia aproximada de 1,20 m entre anclajes. Esta referencia no reemplaza el detalle de anclaje ni el cálculo específico del proyecto. La rigidización con placas OSB o fenólicas trabaja como diafragma; se colocan a junta cruzada.
+
+## Muro con siding de fibrocemento
+Fuente: Manual Tipos de muros, página 2; modular-steel.html, sección Muros, entrepisos y techos.
+La composición publicada, de adentro hacia afuera, es: placa de yeso de 12,5 mm; estructura; lana de vidrio R8 de 63 mm; multilaminado fenólico de 12 mm; barrera de agua y viento; siding de fibrocemento de 8 mm. El espesor total indicado es 12,2 cm y el peso 35 kg/m². Es un detalle de catálogo; el proyecto define perfiles, fijaciones y encuentros.
+
+## Muros DEFS y EIFS
+Fuente: Manual Tipos de muros, páginas 3–9; modular-steel.html, sección Muros, entrepisos y techos.
+Los detalles de catálogo comparten una base interior con placa de yeso de 12,5 mm, estructura, lana de vidrio R8 de 63 mm, multilaminado fenólico de 12 mm y barrera de agua y viento, y cambian el acabado exterior. DEFS cementicio incorpora placa cementicia, malla de fibra de vidrio, basecoat y finishcoat; EIFS agrega EPS de alta densidad y terminación cementicia sobre malla. El sitio describe para EIFS una placa EPS de 50 mm. Los espesores totales publicados son 13,5 cm para DEFS cementicio y 16,8 cm para EIFS cementicio. Piedra, mampostería y chapa son variantes de terminación con espesores y pesos distintos; consultar el detalle correspondiente.
+
+## Entrepiso seco con terminación cerámica
+Fuente: Manual Tipos de muros, página 11; modular-steel.html, sección Muros, entrepisos y techos.
+De abajo hacia arriba, el detalle de catálogo muestra placa de yeso, estructura, lana de vidrio R11, banda acústica, tablero OSB de 25 mm, placa de fibrocemento de 10 mm, geotextil y adhesivo, y piso cerámico. El peso publicado es 51 kg/m² sin contar el cerámico. El dibujo indica apoyos cada 40 cm, pero advierte que diseño y dimensiones de la estructura se determinan para cada proyecto: esa separación no es una especificación universal.
+
+## Entrepiso seco con terminación de madera
+Fuente: Manual Tipos de muros, página 12; modular-steel.html, sección Muros, entrepisos y techos.
+El detalle de catálogo incluye placa de yeso inferior, estructura, lana de vidrio R11, banda acústica, OSB de 25 mm y piso de madera. El peso publicado es 39 kg/m² sin el piso de madera. Las dimensiones, apoyos y conexiones son específicos del proyecto.
+
+## Entrepiso húmedo
+Fuente: Manual Tipos de muros, página 13; modular-steel.html, sección Muros, entrepisos y techos.
+El esquema de catálogo incluye placa de yeso inferior, estructura, lana de vidrio R11, banda acústica, multilaminado fenólico de 18 mm, nylon de 200 micrones y una capa de hormigón alivianado con EPS de aproximadamente 50 mm. El peso publicado es 69 kg/m². Es una composición de referencia, no un diseño estructural ni una autorización para ejecutar sin cálculo.
+
+## Cubiertas y pendientes publicadas
+Fuente: Manual Tipos de muros, páginas 15–18; datos de modelos publicados en modular-steel.html.
+El manual de detalles indica pendientes mínimas de referencia: 10 % para cubierta inclinada de chapa, 20 % para teja asfáltica y 2 % para techo plano con membrana asfáltica. La página de modelos describe chapa inclinada BC35 para el monoambiente y techo plano de hormigón alivianado con pendiente publicada de 1,5 % para el modelo de 45 m². Son sistemas y documentos distintos: no combinar pendientes ni capas por cuenta propia; seguir el plano aprobado del techo elegido.
+
+## Límites de la información técnica
+Fuente: Manual Tipos de muros, páginas 11–13; Manual de armado, páginas 14–18; advertencia del visualizador 3D del sitio.
+Las fichas y modelos son informativos. No proporcionan por sí solos el cálculo necesario para determinar perfiles, luces, cargas, uniones, flejes, fundaciones, anclajes o resistencia del terreno. El manual de entrepisos especifica que cada diseño y sus dimensiones se determinan para el proyecto. Las decisiones de fabricación y obra deben basarse en planos y cálculos revisados por un profesional habilitado localmente.

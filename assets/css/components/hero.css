@@ -1,0 +1,118 @@
+.hero {
+  position: relative;
+  display: flex;
+  min-height: min(820px, 94svh);
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(8rem, 15vh, 11rem) clamp(1.25rem, 9vw, 9rem) 5rem;
+  background: var(--navy);
+  isolation: isolate;
+}
+
+.hero::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(15, 34, 57, .93) 0%, rgba(15, 34, 57, .77) 38%, rgba(31, 44, 58, .2) 100%),
+    linear-gradient(0deg, rgba(20, 33, 48, .34), rgba(181, 138, 69, .3));
+  content: "";
+}
+
+.hero-image {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 57%;
+  filter: saturate(.9) sepia(.3) brightness(.78);
+}
+
+.hero-content {
+  width: min(650px, 100%);
+  padding: 1rem 0;
+}
+
+.eyebrow {
+  margin-bottom: 1.2rem;
+  color: #e0bc79;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 11ch;
+  margin-bottom: 1.2rem;
+  color: var(--ivory);
+  font-size: clamp(3rem, 6.8vw, 6.4rem);
+  font-weight: 600;
+  letter-spacing: -.055em;
+  line-height: .99;
+}
+
+.hero-copy {
+  max-width: 48ch;
+  margin-bottom: 2rem;
+  color: rgba(244, 241, 234, .87);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .85rem;
+  padding: .95rem 1.25rem;
+}
+
+.hero-secondary {
+  display: inline-block;
+  margin-left: 1.25rem;
+  font-size: .9rem;
+  text-decoration: none;
+}
+
+.hero-caption {
+  position: absolute;
+  right: clamp(1.25rem, 4vw, 4rem);
+  bottom: 1.5rem;
+  color: rgba(244, 241, 234, .78);
+  font-size: .75rem;
+  letter-spacing: .08em;
+}
+
+.hero-caption span {
+  display: block;
+  margin-top: .2rem;
+  color: rgba(244, 241, 234, .62);
+  font-size: .65rem;
+  letter-spacing: .04em;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 88svh;
+    padding-bottom: 6rem;
+  }
+
+  .hero::after {
+    background: linear-gradient(90deg, rgba(15, 34, 57, .88), rgba(15, 34, 57, .44)),
+      linear-gradient(0deg, rgba(15, 34, 57, .48), rgba(181, 138, 69, .12));
+  }
+
+  .hero-image {
+    object-position: 58% center;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 14vw, 4.5rem);
+  }
+
+  .hero-secondary {
+    margin: 1rem 0 0;
+  }
+}

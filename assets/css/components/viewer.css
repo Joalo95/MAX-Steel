@@ -1,0 +1,50 @@
+.stage {
+  scroll-margin-top: 1rem;
+  border-color: var(--line);
+  background: #142844;
+}
+
+.v3d {
+  background: radial-gradient(ellipse at 50% 30%, #294160, var(--navy) 75%);
+}
+
+.v3bar,
+.v3l,
+.tools {
+  border-color: var(--line);
+}
+
+.v3msg {
+  max-width: 35rem;
+  margin: 0 auto;
+  color: var(--ivory);
+}
+
+.v3m[aria-pressed="true"] {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.seg button.v3m[aria-pressed="true"] {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.floor-info {
+  border-color: var(--line);
+  background: #203a5b;
+}
+
+.floor-info .floor-warning {
+  color: #f0c982;
+}
+
+@media (max-width: 600px) {
+  .tools {
+    align-items: flex-start;
+  }
+
+  .seg {
+    flex-wrap: wrap;
+  }
+}

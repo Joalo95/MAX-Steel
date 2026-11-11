@@ -1,0 +1,131 @@
+body {
+  background: var(--navy);
+  color: var(--ivory);
+  font-family: "DM Sans", Inter, system-ui, sans-serif;
+}
+
+h1, h2, h3, .btn, .logo {
+  font-family: "Manrope", "DM Sans", sans-serif;
+}
+
+.site-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 3;
+  min-height: 82px;
+  padding: .8rem clamp(1.25rem, 5vw, 5rem);
+  border-bottom-color: rgba(244, 241, 234, .24);
+  background: linear-gradient(180deg, rgba(13, 30, 52, .78), rgba(13, 30, 52, .08));
+}
+
+.site-header nav a,
+.hero-secondary {
+  color: rgba(244, 241, 234, .88);
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible,
+.hero-secondary:hover {
+  color: var(--ivory);
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  color: var(--ivory);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.logo-mark {
+  display: block;
+  width: 42px;
+  height: 42px;
+}
+
+.logo-divider {
+  padding: 0 .2rem;
+  color: var(--gold);
+}
+
+.btn {
+  border-radius: 2px;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 700;
+  transition: background-color .2s ease, transform .2s ease;
+}
+
+.btn:hover {
+  background: #c69e5b;
+  color: var(--navy);
+  transform: translateY(-1px);
+}
+
+.btn.ghost {
+  border-color: rgba(23, 45, 77, .35);
+  color: var(--navy);
+}
+
+.btn.ghost:hover {
+  border-color: var(--gold);
+  background: rgba(181, 138, 69, .1);
+}
+
+.sec,
+.stage,
+footer {
+  color: var(--ivory);
+}
+
+.sec:not(.end) {
+  border-color: var(--line);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .5rem 1.5rem;
+  color: var(--steel-2);
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    position: absolute;
+  }
+}
+
+.site-header.is-scrolled {
+  position: fixed;
+  inset: 0 0 auto;
+  min-height: 68px;
+  padding-top: .55rem;
+  padding-bottom: .55rem;
+  border-bottom-color: rgba(244, 241, 234, .12);
+  background: rgba(16, 34, 57, .82);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .12);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+}
+
+.site-header,
+.site-header .logo-mark {
+  transition: min-height .3s ease, padding .3s ease, background-color .3s ease,
+    border-color .3s ease, box-shadow .3s ease, width .3s ease, height .3s ease;
+}
+
+.site-header.is-scrolled .logo-mark {
+  width: 36px;
+  height: 36px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .site-header,
+  .site-header .logo-mark {
+    transition: none;
+  }
+}

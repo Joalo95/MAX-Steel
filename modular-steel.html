@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es-UY">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MAX-Steel | Casas de steel framing diseñadas para durar</title>
+<meta name="description" content="Casas de steel framing listas para armar: diseño, estructura de acero, planos y materiales. Explora modelos de 25, 45 y 65 m².">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#172D4D">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_UY">
+<meta property="og:site_name" content="MAX-Steel">
+<meta property="og:title" content="MAX-Steel | Casas de steel framing">
+<meta property="og:description" content="Diseño preciso, estructura de acero y montaje pensado para tu terreno. Descubre nuestros modelos y visualízalos en 3D.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MAX-Steel | Casas de steel framing">
+<meta name="twitter:description" content="Diseño preciso, estructura de acero y montaje pensado para tu terreno.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+<link rel="icon" href="assets/images/max-steel-mark.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/images/summer-house-golden-hour.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MAX-Steel",
+  "email": "contacto@maxsteel.com.uy",
+  "telephone": "+59829296454",
+  "description": "Diseño y fabricación de estructuras de steel framing y kits de vivienda en Uruguay."
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="#top" aria-label="MAX-Steel, inicio"><img class="logo-mark" src="assets/images/max-steel-mark.svg" width="46" height="46" alt=""><span>MAX<span class="logo-divider">-</span>Steel</span></a>
+  <nav aria-label="Navegación principal"><a href="#modelos">Modelos</a><a href="#estructura">Visualizador 3D</a><a href="#sistema">Sistema</a><a href="#muros">Materiales</a><a href="#contacto">Contacto</a></nav>
+  <a class="btn sm header-cta" href="#contacto">Solicitar cotización</a>
+</header>
+<main id="top">
+<section class="hero" aria-labelledby="hero-title">
+  <img class="hero-image" src="assets/images/summer-house-golden-hour.jpg" alt="Casa contemporánea de verano con grandes ventanales y revestimiento cálido, iluminada al atardecer" width="2200" height="1467" fetchpriority="high">
+  <div class="hero-content">
+    <p class="eyebrow">Arquitectura · Ingeniería · Acero</p>
+    <h1 id="hero-title">El lugar donde empieza tu próxima historia.</h1>
+    <p class="hero-copy">Casas de steel framing diseñadas con precisión, fabricadas como kit y listas para tomar forma en tu terreno.</p>
+    <a class="btn hero-cta" href="#estructura" data-open-viewer data-k="d1">Explorar modelos en 3D <span aria-hidden="true">↗</span></a>
+    <a class="hero-secondary" href="#modelos">Conoce las casas <span aria-hidden="true">↓</span></a>
+  </div>
+  <p class="hero-caption">Diseño que se siente. Ingeniería que se nota. <span>Imagen ilustrativa · Unsplash</span></p>
+</section>
+
+<section class="stage" id="estructura">
+  <div class="tools"><span class="lbl">Modelo:</span>
+    <div class="seg" role="group" aria-label="Modelo"><button type="button" class="v3m" data-m="mono" aria-pressed="false">Monoambiente 25 m²</button><button type="button" class="v3m" data-m="d1" aria-pressed="false">1 dormitorio 45 m²</button><button type="button" class="v3m" data-m="d2" aria-pressed="false">2 dormitorios 65 m²</button></div>
+  </div>
+  <div class="v3d" id="v3d" aria-label="Visualizador interactivo de estructura steel framing"><p class="v3msg" id="v3msg" role="status" aria-live="polite">Selecciona «Explorar modelos en 3D» para cargar una estructura.</p></div>
+  <div class="v3l" id="v3l" role="group" aria-label="Capas visibles"></div>
+  <div class="v3bar"><label>Corte horizontal <input type="range" id="v3cut" min="0.3" max="3.5" step="0.05" value="3.5" aria-label="Altura del corte"><output id="v3o" class="mono">sin corte</output></label><button type="button" class="chip" id="v3auto" aria-pressed="false">Girar solo</button><span class="lbl">Arrastra para orbitar · rueda para zoom · clic derecho para desplazar</span></div>
+  <aside class="floor-info" aria-label="Criterio del entrepiso">
+    <!-- <h3>Entrepiso sobre pilares · esquema conceptual</h3>
+    <p>La visualización agrega cuatro vigas tubulares perimetrales, montantes C de 150 mm transversales al lado largo, refuerzos en sus encuentros, un fleje diagonal y pilares de hormigón en una retícula gráfica. La separación aproximada de 40 cm y la elevación de 45 cm son solo referencias visuales; no definen un proyecto estructural.</p>
+    <p><b>Piso interior, de arriba hacia abajo:</b> cerámica · geotextil y adhesivo · placa de fibrocemento de 10 mm · tablero OSB de 25 mm · banda acústica sobre los montantes.</p>
+    <p><b>Cara inferior, hacia el suelo:</b> aislación de lana de vidrio R11 entre los perfiles · cielorraso de yeso. Son las capas del detalle de entrepiso seco cerámico del catálogo consultado; no se añadieron membranas ni protecciones que ese detalle no especifica.</p> -->
+    <p class="floor-warning">Las secciones, espesores de acero, luces, uniones, flejes, ubicación de pilares, fundaciones, cargas y condiciones del terreno requieren cálculo y planos de un profesional local antes de fabricar o construir. El modelo no es apto como plano de obra.</p>
+    <p class="floor-sources"><b>Fuentes:</b> <a href="https://www.buildusingsteel.org/aisi-design-standards-s100-s200-s300-s400-series/" target="_blank" rel="noopener">AISI S240-20 · diseño, fabricación, instalación y calidad de estructura CFS</a>.</p>
+  </aside>
+  <!-- <p class="credit credit-note">Esquema generado desde los planos publicados: dimensiones, aberturas y tabiques. Perfil PGC de 89 mm y montantes a 40,7 cm, como en el manual de armado. La estructura incluye blocking a media altura, cruces de San Andrés en los tramos de muro sin aberturas, strapping horizontal, y refuerzos en los encuentros de muros en L, T y cruz, en ámbar; su disposición es una interpretación del manual y se confirma con los planos de montaje. El monoambiente lleva siding vertical Superboard Cedar sobre placa Superboard de 10 mm, Tyvek y OSB; los modelos de 1 y 2 dormitorios muestran el cerramiento EIFS del catálogo. En el techo, el monoambiente lleva chapa prepintada y los otros dos, hormigón alivianado con pendiente de 1,5 % hacia los puntos de bajada sugeridos (espesor mínimo de unos 50 mm). Los pretiles de esos dos modelos se revisten con OSB, Tyvek para techo, yeso de alta densidad, basecoat y finishcoat, sin EPS. El monoambiente suma babetas laterales y superior, gotero, compriband y esquineros de siding. La terminación interior usa placa de yeso, lana de vidrio R8 y una barrera de vapor, que no figura en los PDF. Los precios publicados corresponden a siding vertical; otras terminaciones se consultan.</p> -->
+</section>
+
+<section class="sec" id="modelos">
+  <p class="section-kicker">Espacios para vivir</p>
+  <h2>Tres modelos. Una forma inteligente de crecer.</h2>
+  <p class="sub">Los proyectos están listos para armar. Precios publicados en junio de 2024, más IVA, con terminación siding vertical; para otras terminaciones, consulta.</p>
+  <div class="model-grid" id="model-grid" aria-label="Modelos de vivienda">
+      <article class="model-card">
+        <div class="model-card-top"><span class="model-index">01</span><span class="model-area">25 <small>m²</small></span></div>
+        <div class="model-card-body"><p class="model-type">Esencial</p><h3>Monoambiente</h3><p class="model-dimensions">7,66 × 3,26 m</p>
+          <p class="model-description">Un espacio abierto para vivir, trabajar y descansar. Incluye baño independiente y posibilidad de crecimiento.</p>
+          <ul class="model-facts"><li>Ambiente principal: 5,83 × 2,98 m · baño: 1,44 × 2,98 m</li><li>Techo inclinado con chapa BC35 · cota máxima: 3,35 m</li><li>Altura interior: 2,40 m · prevé crecimiento</li></ul>
+          <div class="model-card-footer"><p class="price">US$ 6.133<small>+ IVA · 36 cuotas de US$ 170 + IVA<br>Aberturas PVC opcionales: US$ 2.410 + IVA</small></p><button class="btn model-cta" data-open-viewer data-k="mono">Explorar modelo <span aria-hidden="true">↗</span></button></div>
+        </div>
+      </article>
+      <article class="model-card model-card--featured">
+        <div class="model-card-top"><span class="model-index">02</span><span class="model-area">45 <small>m²</small></span></div>
+        <div class="model-card-body"><p class="model-type">Equilibrio</p><h3>1 dormitorio</h3><p class="model-dimensions">10,45 × 4,46 m</p>
+          <p class="model-description">Ambientes definidos con cocina, estar-comedor, dormitorio y baño en una planta compacta.</p>
+          <ul class="model-facts"><li>Estar-comedor: 5,83 × 3,84 m · dormitorio: 4,23 × 2,64 m</li><li>Baño: 3,02 × 1,42 m</li><li>Techo plano de hormigón alivianado · cota: 3,20 m</li><li>Altura interior: 2,40 m · pendiente: 1,5 %</li></ul>
+          <div class="model-card-footer"><p class="price">US$ 9.432<small>+ IVA · 36 cuotas de US$ 262 + IVA<br>Aberturas PVC opcionales: US$ 5.953 + IVA</small></p><button class="btn model-cta" data-open-viewer data-k="d1">Explorar modelo <span aria-hidden="true">↗</span></button></div>
+        </div>
+      </article>
+      <article class="model-card">
+        <div class="model-card-top"><span class="model-index">03</span><span class="model-area">65 <small>m²</small></span></div>
+        <div class="model-card-body"><p class="model-type">Amplitud</p><h3>2 dormitorios</h3><p class="model-dimensions">12,06 × 6,06 m</p>
+          <p class="model-description">Más espacio para compartir, con dos dormitorios y un área social integrada.</p>
+          <ul class="model-facts"><li>Dos dormitorios: 3,85 × 2,68 m y 3,85 × 2,65 m</li><li>Estar-comedor: 6,31 × 5,08 m · baño: 1,48 × 2,68 m</li><li>Techo plano con dos puntos de bajada · cota: 3,30 m</li><li>Altura interior: 2,40 m</li></ul>
+          <div class="model-card-footer"><p class="price">US$ 14.387<small>+ IVA · 36 cuotas de US$ 400 + IVA<br>Aberturas PVC opcionales: US$ 6.187 + IVA</small></p><button class="btn model-cta" data-open-viewer data-k="d2">Explorar modelo <span aria-hidden="true">↗</span></button></div>
+        </div>
+      </article>
+  </div>
+  <div class="custom-project"><div><p class="model-type">Hecho para ti</p><h3>¿Tienes otra idea en mente?</h3><p>Llevas tus planos o diseñamos juntos. Revisas el modelo 3D y apruebas el proyecto antes de fabricar el panelizado y el cálculo de ingeniería.</p></div><a class="custom-link" href="mailto:contacto@uruframe.com.uy?subject=Dise%C3%B1o%20y%20medidas%20libres">Diseñar a medida <span aria-hidden="true">↗</span></a></div>
+</section>
+
+<section class="sec sec-tight" id="sistema">
+  <p class="section-kicker">Del plano a la obra</p>
+  <h2>Cómo trabaja MAX-Steel</h2>
+  <p class="sub">MAX-Steel proyecta y fabrica estructuras de Steel Framing listas para construir, junto al estudio Block Arquitectos. La perfilería se produce a medida con tecnología asistida por computadora, así que llega con sus perforaciones y operaciones y se evitan cortes y desperdicio en obra.</p>
+  <ol class="steps timeline-steps">
+    <li><div class="timeline-card"><span class="timeline-label">01 · Diseñar</span><b>Modelado 3D</b><p>Diseñamos la estructura según tu proyecto, sus muros y los detalles definidos.</p></div></li>
+    <li><div class="timeline-card"><span class="timeline-label">02 · Revisar</span><b>Aprobación</b><p>Exploras el modelo completo y confirmas el proyecto antes de fabricar.</p></div></li>
+    <li><div class="timeline-card"><span class="timeline-label">03 · Producir</span><b>Fabricación a medida</b><p>Cada perfil llega con sus operaciones e identificación de panel y pieza. No requiere cortes ni perforaciones en obra.</p></div></li>
+    <li><div class="timeline-card"><span class="timeline-label">04 · Entregar</span><b>Kit o panelizado</b><p>Elige la perfilería para armar o los paneles listos para montar, con tornillería y accesorios.</p></div></li>
+    <li><div class="timeline-card"><span class="timeline-label">05 · Montar</span><b>Armado en obra</b><p>Base nivelada, paneles escuadrados, tornillos especificados y anclajes según planos. Puedes solicitar asesoramiento en obra.</p></div></li>
+    <li><div class="timeline-card timeline-card--gold"><span class="timeline-label">06 · Cuidar</span><b>Regla de oro</b><p>No cortes ni modifiques la estructura. Ante una duda, consulta al equipo técnico.</p></div></li>
+  </ol>
+  <div class="profile-feature"><div class="profile-feature-intro"><p class="section-kicker">Ingeniería de precisión</p><h3>Un perfil.<br>Un sistema completo.</h3><p>Perfiles de acero galvanizado diseñados para que cada pieza llegue identificada y lista para ensamblar.</p></div>
+  <h3 class="profile-heading">El perfil</h3>
+  <div class="scroll"><table class="tbl"><tbody>
+  <tr><th scope="row">Tipo</th><td>Perfil de acero galvanizado de sección C (PGC), único del sistema. Los paneles tienen 89 mm de espesor.</td></tr>
+  <tr><th scope="row">Dimensiones</th><td>Alma 89 mm · ala 41 mm · labio 10 mm</td></tr>
+  <tr><th scope="row">Peso y calibre</th><td>1,33 kg por metro · chapa de 0,89 a 1,2 mm</td></tr>
+  <tr><th scope="row">Tensión de fluencia</th><td>Serie estándar 250 MPa · serie plus 350 MPa</td></tr>
+  <tr><th scope="row">Recubrimiento</th><td>Zinc Z275 (IRAM-IAS 505) o Aluzinc AZ150 g/m²</td></tr>
+  <tr><th scope="row">Perforaciones</th><td>De 35 mm para instalación sanitaria a 35 y 50 cm de la base y eléctrica a 100 cm</td></tr>
+  </tbody></table></div></div>
+</section>
+
+<section class="sec sec-tight" id="muros">
+  <p class="section-kicker">Materialidad</p>
+  <h2>Muros, entrepisos y techos</h2>
+  <p class="sub">Cada muro lleva, de adentro hacia afuera, placa de yeso de 12,5 mm, la estructura, lana de vidrio R8 de 63 mm, multilaminado fenólico de 12 mm y barrera de agua y viento. Después se elige la terminación. MAX-Steel suministra los materiales secos incluidos en el kit.</p>
+  <div class="material-callout"><span class="material-callout-mark" aria-hidden="true">01</span><p><strong>Capas que trabajan en conjunto.</strong> Cada solución combina estructura, aislación y terminaciones para responder a distintos criterios de diseño.</p></div>
+  <div class="scroll"><table class="tbl"><thead><tr><th scope="col">Terminación del muro</th><th scope="col">Espesor total</th><th scope="col">Peso</th></tr></thead><tbody>
+  <tr><td>Siding de fibrocemento símil madera</td><td>12,2 cm</td><td>35 kg/m²</td></tr>
+  <tr><td>DEFS con finishcoat cementicio</td><td>13,5 cm</td><td>42 kg/m²</td></tr>
+  <tr><td>DEFS con piedra</td><td>13 cm + piedra</td><td>61 kg/m²</td></tr>
+  <tr><td>DEFS vinculado a mampostería</td><td>13 cm + ladrillo</td><td>—</td></tr>
+  <tr><td>DEFS con chapa</td><td>16,3 cm + chapa</td><td>—</td></tr>
+  <tr><td>EIFS con finishcoat cementicio</td><td>16,8 cm</td><td>31 kg/m²</td></tr>
+  <tr><td>EIFS con piedra</td><td>16,3 cm + piedra</td><td>50 kg/m²</td></tr>
+  <tr><td>EIFS vinculado a mampostería</td><td>16,3 cm + ladrillo</td><td>—</td></tr>
+  </tbody></table></div>
+  <p class="sub wall-copy">En el muro EIFS, sobre la barrera de agua y viento va una placa de EPS de alta densidad de 50 mm fijada con arandelas, luego basecoat cementicio sobre malla de fibra de vidrio y, al final, finishcoat cementicio. Son las capas que puedes encender y apagar en el visor 3D.</p>
+  <div class="scroll"><table class="tbl"><thead><tr><th scope="col">Entrepisos y techos</th><th scope="col">Peso</th><th scope="col">Pendiente mínima</th></tr></thead><tbody>
+  <tr><td>Entrepiso seco, terminación cerámica (sin cerámico)</td><td>51 kg/m²</td><td>—</td></tr>
+  <tr><td>Entrepiso seco, terminación madera (sin piso)</td><td>39 kg/m²</td><td>—</td></tr>
+  <tr><td>Entrepiso húmedo</td><td>69 kg/m²</td><td>—</td></tr>
+  <tr><td>Techo inclinado con chapa acanalada BC35</td><td>35 kg/m²</td><td>10 %</td></tr>
+  <tr><td>Techo inclinado con teja asfáltica</td><td>27 kg/m²</td><td>20 %</td></tr>
+  <tr><td>Techo plano con membrana asfáltica</td><td>36 kg/m²</td><td>2 %</td></tr>
+  <tr><td>Techo húmedo con membrana asfáltica</td><td>70 kg/m²</td><td>2 %</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="sec sec-tight">
+  <h2>Montaje en obra, en seis pasos</h2>
+  <ol class="steps">
+    <li><b>Base.</b> Una platea plana, nivelada y escuadrada, limpia en las superficies de contacto.</li>
+    <li><b>Replanteo.</b> Se marca la estructura sobre la platea con el plano de montaje, con un separador antivibración bajo cada solera.</li>
+    <li><b>Paneles exteriores.</b> Se parte de una esquina, se apuntala y se verifican escuadra y nivel. Los paneles se unen con tornillos hexagonales 10 3/4 cada 15 cm en zigzag.</li>
+    <li><b>Anclajes.</b> Primero en las esquinas y luego en los vanos, con taco metálico expansivo y platina en L: aproximadamente uno cada 1,20 m.</li>
+    <li><b>Rigidización.</b> Se emplaca con fenólico u OSB desde una esquina hacia el centro, a junta cruzada. Funciona como diafragma estructural.</li>
+    <li><b>Entrepiso o techo.</b> Primero las vigas de cierre perimetrales y luego las cerchas, con banda acústica sobre cada viga antes de emplacar.</li>
+  </ol>
+</section>
+
+<section class="sec sec-tight">
+  <h2>Materiales secos incluidos</h2>
+  <p class="sub">Cantidades por modelo con terminación siding vertical. Son una guía estimada con 10 % de desperdicio, sujetas a stock; los totales deben ser confirmados por el cliente.</p>
+  <div class="scroll"><table class="tbl"><thead><tr><th scope="col">Material</th><th scope="col">Mono 25</th><th scope="col">1 dorm. 45</th><th scope="col">2 dorm. 65</th></tr></thead><tbody>
+  <tr><td>Siding Superboard Cedar 8 mm (0,20 × 3,60 m)</td><td>137</td><td>148</td><td>138</td></tr>
+  <tr><td>Placa OSB 11 mm (1,22 × 2,44 m)</td><td>34</td><td>46</td><td>64</td></tr>
+  <tr><td>Placa OSB gruesa (15,1 mm en mono; 18,3 mm en los demás)</td><td>9</td><td>18</td><td>27</td></tr>
+  <tr><td>Placa exterior base (Superboard 10 mm / Aquapanel 12,5 mm)</td><td>6</td><td>13</td><td>22</td></tr>
+  <tr><td>Placa de yeso Durlock regular 12,5 mm</td><td>21</td><td>47</td><td>80</td></tr>
+  <tr><td>Placa de yeso Durlock W. Resist 12,5 mm</td><td>14</td><td>16</td><td>13</td></tr>
+  <tr><td>Lana de vidrio Isover R11, 89 mm (14,4 m²)</td><td>2</td><td>3</td><td>4</td></tr>
+  <tr><td>Lana de vidrio Isover R8, 70 mm (14,4 m²)</td><td>4</td><td>6</td><td>8</td></tr>
+  <tr><td>Perfil omega 10 mm cal. 26 (3,0 m)</td><td>25</td><td>45</td><td>65</td></tr>
+  <tr><td>Membrana Homewrap Weathermate (2,75 × 45,75 m)</td><td>1</td><td>1</td><td>2</td></tr>
+  <tr><td>Chapas prepintadas 0,41 mm × 7,05 m</td><td>3</td><td>—</td><td>—</td></tr>
+  </tbody></table></div>
+</section>
+
+
+<section class="sec" id="condiciones">
+  <div class="cols">
+    <div><h3>Qué incluye cada kit</h3><ul><li>Planos de anteproyecto, panelizado de la estructura y planos de montaje.</li><li>Estructura completa en acero galvanizado: perfilería, accesorios, tornillería y cálculo de ingeniería.</li><li>Materiales secos según la lista.</li></ul></div>
+    <div><h3>Calidad y normas</h3><p>Perfiles de acero galvanizado de calidad estructural según IRAM IAS U500-205, con galvanizado mínimo Z 275 g/m². Respaldo técnico: AISI, ASTM, ICC, Eurocódigos e INTI-CIRSOC.</p></div>
+    <div><h3>Pago y entrega</h3><ul><li>60 % al encargar el trabajo y 40 % antes de la entrega de la estructura.</li><li>Perfilería para armar en 15 días desde la seña.</li><li>Retiro con aviso de 48 h. Fletes no incluidos.</li><li>Financiación a tasa cero en 36 cuotas con BBVA, sujeta a aprobación crediticia.</li></ul></div>
+  </div>
+  <p class="sub offer-note">La oferta es válida solo por el total de los materiales; cualquier cambio de cantidad o producto se recotiza. Las aberturas de PVC (DVH 5+12+5, manija bipunto) son opcionales y no incluyen tapajuntas ni mosquitero.</p>
+</section>
+
+
+<section class="sec end" id="contacto">
+  <h2>Cuéntanos qué quieres armar</h2>
+  <p class="sub">Escríbenos con el modelo o las medidas que te interesan y te respondemos con la cotización.</p>
+  <a class="btn" href="mailto:contacto@maxsteel.com.uy?subject=Cotizaci%C3%B3n%20MAX-Steel">contacto@maxsteel.com.uy</a>
+  <p class="sub mono phone">Tel. 29 29 00 00 · Cuareim 1900, Montevideo</p>
+</section>
+</main>
+<footer><span>MAX-Steel · Steel Framing</span><span>Financia BBVA</span><span>Precios publicados válidos hasta diciembre de 2026.</span></footer>
+<button class="assistant-toggle" id="assistant-toggle" type="button" aria-expanded="false" aria-controls="technical-assistant">
+  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.86L4 21l4.8-1.6A8.5 8.5 0 1 0 12 3.5Z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg>
+  <span>Preguntar a MAX</span>
+</button>
+<aside class="assistant-panel" id="technical-assistant" role="dialog" aria-labelledby="assistant-title" aria-describedby="assistant-description" hidden>
+  <div class="assistant-header">
+    <div class="assistant-identity">
+      <span class="assistant-avatar" aria-hidden="true">M</span>
+      <div><h2 id="assistant-title">MAX</h2><p id="assistant-description"><span class="assistant-status" aria-hidden="true"></span>Asistente técnico · en línea</p></div>
+    </div>
+    <button class="assistant-close" id="assistant-close" type="button" aria-label="Cerrar chat">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="assistant-disclaimer">Respuestas basadas en la información técnica del sitio. No reemplazan planos ni cálculos profesionales.</div>
+  <div class="assistant-messages" id="assistant-messages" role="log" aria-live="polite" aria-relevant="additions">
+    <div class="assistant-welcome">
+      <p class="assistant-message assistant-message--answer">¡Hola! Soy MAX. Puedo responder consultas técnicas y calcular superficies de ambientes o pesos estimados de componentes con los datos publicados.</p>
+      <div class="assistant-suggestions" aria-label="Preguntas frecuentes">
+        <button type="button" data-assistant-question="¿Qué perfil PGC se utiliza?">Perfiles PGC</button>
+        <button type="button" data-assistant-question="¿Qué capas tiene el entrepiso cerámico?">Capas del entrepiso</button>
+        <button type="button" data-assistant-question="¿Cuántos m² tiene el baño del monoambiente?">Área del baño</button>
+        <button type="button" data-assistant-question="¿Cuánto pesan 20 m² de muro siding?">Estimar peso</button>
+      </div>
+    </div>
+  </div>
+  <form class="assistant-form" id="assistant-form">
+    <label class="sr-only" for="assistant-question">Escribe una consulta técnica</label>
+    <input id="assistant-question" name="question" type="text" maxlength="500" autocomplete="off" placeholder="Escribe una consulta técnica…" required>
+    <button type="submit" aria-label="Enviar consulta">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 3-7.2 18-3.9-7.9L2 9.2 21 3Z"/><path d="M9.9 13.1 15 8"/></svg>
+    </button>
+  </form>
+  <p class="assistant-privacy">Privado y local · tus consultas no se envían a una IA ni a un servidor.</p>
+</aside>
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
