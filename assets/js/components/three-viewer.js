@@ -40,13 +40,18 @@ const GRP=[['Estructura',[['Muros exteriores','Muros exteriores','#c3ccda',1],['
  ['Entrepiso membrana Tyvek','Membrana Tyvek inferior','#d8c99e',0],
  ['Entrepiso placa cementicia 10 mm','Placa cementicia inferior · 10 mm','#c3ccda',0]
 ]]];
+const VIEW_GROUPS={
+ architecture:new Set(GRP.filter(g=>!['Estructura','Base de entrepiso'].includes(g[0])).map(g=>g[0])),
+ structure:new Set(['Estructura','Base de entrepiso']),
+ composition:new Set(GRP.map(g=>g[0]))
+};
 const ENT=[];const on={};const wrap=document.getElementById('v3l');
 GRP.forEach(g=>{const fs=document.createElement('fieldset'),lg=document.createElement('legend');fs.className='v3g';lg.textContent=g[0];fs.appendChild(lg);
  g[1].forEach(l=>{on[l[0]]=!!l[3];on[l[0].replace(/\s/g,'_')]=!!l[3];const lb=document.createElement('label'),c=document.createElement('input');lb.style.setProperty('--c',l[2]);c.type='checkbox';c.checked=!!l[3];
   c.addEventListener('change',()=>{on[l[0]]=c.checked;on[l[0].replace(/\s/g,'_')]=c.checked;layers()});lb.append(c,document.createTextNode(l[1]));fs.appendChild(lb);ENT.push([l[0],lb])});wrap.appendChild(fs)});
 let H=3.5,cur=null,request=0;const cache={};
 // Increment the cache version when replacing a model at an existing URL.
-const MODEL_CACHE='max-steel-models-v1',FILES={mono:'models3D/Monoambiente25.glb',d1:'models3D/1Dormitorio45.glb',d2:'models3D/2Dormitorios65.glb'};const TX={'Siding Cedar':'models3D/tex-cedar.png','Placa Superboard':'models3D/tex-sb.png'},txc={};
+const MODEL_CACHE='max-steel-models-v1',asset=path=>new URL(`../../../${path}`,import.meta.url).href,FILES={mono:asset('models3D/Monoambiente25.glb'),d1:asset('models3D/1Dormitorio45.glb'),d2:asset('models3D/2Dormitorios65.glb')};const TX={'Siding Cedar':asset('models3D/tex-cedar.png'),'Placa Superboard':asset('models3D/tex-sb.png')},txc={};
 function parseModel(data,url){return new Promise((resolve,reject)=>new T.GLTFLoader().parse(data,new URL('.',url).href,resolve,reject))}
 async function loadModel(url){
  const absoluteUrl=new URL(url,document.baseURI).href;let storage;
@@ -61,6 +66,16 @@ async function loadModel(url){
 const getTx=url=>txc[url]||(txc[url]=(()=>{const t=new T.TextureLoader().load(url,undefined,undefined,e=>console.error('No se pudo cargar la textura 3D:',url,e));t.wrapS=t.wrapT=T.RepeatWrapping;return t})());
 const setCut=()=>{const v=+cut.value;plane.constant=v>=H-.02?50:v;out.textContent=v>=H-.02?'sin corte':'a '+v.toFixed(2).replace('.',',')+' m'};
 function layers(){if(cur)cur.traverse(o=>{const n=(o.userData&&o.userData.name in on)?o.userData.name:(o.name in on?o.name:null);if(n!==null)o.visible=on[n]})}
+function setViewMode(mode){
+ const visibleGroups=VIEW_GROUPS[mode]||VIEW_GROUPS.architecture;
+ GRP.forEach(g=>g[1].forEach(l=>{
+  const visible=visibleGroups.has(g[0]),name=l[0];
+  on[name]=visible;on[name.replace(/\s/g,'_')]=visible;
+  const entry=ENT.find(e=>e[0]===name),input=entry&&entry[1].querySelector('input');
+  if(input)input.checked=visible
+ }));
+ layers()
+}
 cut.addEventListener('input',setCut);
 auto.addEventListener('click',()=>{const o=auto.getAttribute('aria-pressed')!=='true';auto.setAttribute('aria-pressed',o);ctl.autoRotate=o&&!matchMedia('(prefers-reduced-motion:reduce)').matches});
 const resize=()=>{const w=box.clientWidth,h=box.clientHeight;renderer.setSize(w,h);cam.aspect=w/h;cam.updateProjectionMatrix()};
@@ -79,5 +94,5 @@ function open(k){document.querySelectorAll('.v3m').forEach(b=>b.setAttribute('ar
 document.querySelectorAll('.v3m').forEach(b=>b.addEventListener('click',()=>open(b.dataset.m)));
 let vis=false,run=false;const loop=()=>{if(!vis){run=false;return}requestAnimationFrame(loop);ctl.update();renderer.render(scene,cam)};
 new IntersectionObserver(e=>{vis=e[0].isIntersecting;if(vis&&!run){run=true;loop()}}).observe(box);
-return {openModel:open};
+return {openModel:open,setViewMode};
 }

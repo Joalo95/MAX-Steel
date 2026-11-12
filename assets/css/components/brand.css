@@ -32,22 +32,13 @@ h1, h2, h3, .btn, .logo {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: .65rem;
-  color: var(--ivory);
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: .12em;
+  flex: none;
 }
 
-.logo-mark {
+.logo-image {
   display: block;
-  width: 42px;
-  height: 42px;
-}
-
-.logo-divider {
-  padding: 0 .2rem;
-  color: var(--gold);
+  width: clamp(146px, 16vw, 210px);
+  height: auto;
 }
 
 .btn {
@@ -112,20 +103,19 @@ footer {
 }
 
 .site-header,
-.site-header .logo-mark {
+.site-header .logo-image {
   transition: min-height .3s ease, padding .3s ease, background-color .3s ease,
     border-color .3s ease, box-shadow .3s ease, width .3s ease, height .3s ease;
 }
 
-.site-header.is-scrolled .logo-mark {
-  width: 36px;
-  height: 36px;
+.site-header.is-scrolled .logo-image {
+  width: clamp(140px, 14vw, 184px);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .btn,
   .site-header,
-  .site-header .logo-mark {
+  .site-header .logo-image {
     transition: none;
   }
 }

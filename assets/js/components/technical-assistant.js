@@ -293,6 +293,7 @@ export function calculateFromTechnicalData(question) {
 
 export function initializeTechnicalAssistant() {
   const toggle = document.getElementById('assistant-toggle');
+  const additionalToggles = [...document.querySelectorAll('[data-assistant-open]')];
   const panel = document.getElementById('technical-assistant');
   const close = document.getElementById('assistant-close');
   const form = document.getElementById('assistant-form');
@@ -302,11 +303,16 @@ export function initializeTechnicalAssistant() {
   if (!toggle || !panel || !close || !form || !submitButton || !input || !messages) return;
 
   let knowledgePromise;
+  let activeToggle = toggle;
   const setOpen = open => {
     panel.hidden = !open;
-    toggle.setAttribute('aria-expanded', String(open));
+    [toggle, ...additionalToggles].forEach(button => button.setAttribute('aria-expanded', String(open)));
     if (open) input.focus();
-    else toggle.focus();
+    else {
+      const visibleToggle = [activeToggle, ...additionalToggles, toggle]
+        .find(button => button.getClientRects().length > 0);
+      visibleToggle?.focus();
+    }
   };
   const addMessage = (text, kind, source) => {
     const message = document.createElement('p');
@@ -339,7 +345,12 @@ export function initializeTechnicalAssistant() {
     return knowledgePromise;
   };
 
-  toggle.addEventListener('click', () => setOpen(panel.hidden));
+  [toggle, ...additionalToggles].forEach(button => {
+    button.addEventListener('click', () => {
+      activeToggle = button;
+      setOpen(panel.hidden);
+    });
+  });
   close.addEventListener('click', () => setOpen(false));
   panel.addEventListener('keydown', event => {
     if (event.key === 'Escape') setOpen(false);

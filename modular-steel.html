@@ -36,8 +36,8 @@
 </head>
 <body>
 <header class="site-header">
-  <a class="logo" href="#top" aria-label="MAX-Steel, inicio"><img class="logo-mark" src="assets/images/max-steel-mark.svg" width="46" height="46" alt=""><span>MAX<span class="logo-divider">-</span>Steel</span></a>
-  <nav aria-label="Navegación principal"><a href="#modelos">Modelos</a><a href="#estructura">Visualizador 3D</a><a href="#sistema">Sistema</a><a href="#muros">Materiales</a><a href="#contacto">Contacto</a></nav>
+  <a class="logo" href="#top" aria-label="MAX-Steel, inicio"><img class="logo-image" src="assets/images/max-steel-logo.svg" width="720" height="260" alt="MAX-Steel · Constructora · Steel Framing"></a>
+  <nav aria-label="Navegación principal"><a href="#modelos">Modelos</a><a href="max-steel-studio/">MAX Studio</a><a href="#sistema">Sistema</a><a href="#muros">Materiales</a><a href="#contacto">Contacto</a></nav>
   <a class="btn sm header-cta" href="#contacto">Solicitar cotización</a>
 </header>
 <main id="top">
@@ -47,28 +47,10 @@
     <p class="eyebrow">Arquitectura · Ingeniería · Acero</p>
     <h1 id="hero-title">El lugar donde empieza tu próxima historia.</h1>
     <p class="hero-copy">Casas de steel framing diseñadas con precisión, fabricadas como kit y listas para tomar forma en tu terreno.</p>
-    <a class="btn hero-cta" href="#estructura" data-open-viewer data-k="d1">Explorar modelos en 3D <span aria-hidden="true">↗</span></a>
+    <a class="btn hero-cta" href="max-steel-studio?model=d1&amp;load=1">Explorar modelos en 3D <span aria-hidden="true">↗</span></a>
     <a class="hero-secondary" href="#modelos">Conoce las casas <span aria-hidden="true">↓</span></a>
   </div>
   <p class="hero-caption">Diseño que se siente. Ingeniería que se nota. <span>Imagen ilustrativa · Unsplash</span></p>
-</section>
-
-<section class="stage" id="estructura">
-  <div class="tools"><span class="lbl">Modelo:</span>
-    <div class="seg" role="group" aria-label="Modelo"><button type="button" class="v3m" data-m="mono" aria-pressed="false">Monoambiente 25 m²</button><button type="button" class="v3m" data-m="d1" aria-pressed="false">1 dormitorio 45 m²</button><button type="button" class="v3m" data-m="d2" aria-pressed="false">2 dormitorios 65 m²</button></div>
-  </div>
-  <div class="v3d" id="v3d" aria-label="Visualizador interactivo de estructura steel framing"><p class="v3msg" id="v3msg" role="status" aria-live="polite">Selecciona «Explorar modelos en 3D» para cargar una estructura.</p></div>
-  <div class="v3l" id="v3l" role="group" aria-label="Capas visibles"></div>
-  <div class="v3bar"><label>Corte horizontal <input type="range" id="v3cut" min="0.3" max="3.5" step="0.05" value="3.5" aria-label="Altura del corte"><output id="v3o" class="mono">sin corte</output></label><button type="button" class="chip" id="v3auto" aria-pressed="false">Girar solo</button><span class="lbl">Arrastra para orbitar · rueda para zoom · clic derecho para desplazar</span></div>
-  <aside class="floor-info" aria-label="Criterio del entrepiso">
-    <!-- <h3>Entrepiso sobre pilares · esquema conceptual</h3>
-    <p>La visualización agrega cuatro vigas tubulares perimetrales, montantes C de 150 mm transversales al lado largo, refuerzos en sus encuentros, un fleje diagonal y pilares de hormigón en una retícula gráfica. La separación aproximada de 40 cm y la elevación de 45 cm son solo referencias visuales; no definen un proyecto estructural.</p>
-    <p><b>Piso interior, de arriba hacia abajo:</b> cerámica · geotextil y adhesivo · placa de fibrocemento de 10 mm · tablero OSB de 25 mm · banda acústica sobre los montantes.</p>
-    <p><b>Cara inferior, hacia el suelo:</b> aislación de lana de vidrio R11 entre los perfiles · cielorraso de yeso. Son las capas del detalle de entrepiso seco cerámico del catálogo consultado; no se añadieron membranas ni protecciones que ese detalle no especifica.</p> -->
-    <p class="floor-warning">Las secciones, espesores de acero, luces, uniones, flejes, ubicación de pilares, fundaciones, cargas y condiciones del terreno requieren cálculo y planos de un profesional local antes de fabricar o construir. El modelo no es apto como plano de obra.</p>
-    <p class="floor-sources"><b>Fuentes:</b> <a href="https://www.buildusingsteel.org/aisi-design-standards-s100-s200-s300-s400-series/" target="_blank" rel="noopener">AISI S240-20 · diseño, fabricación, instalación y calidad de estructura CFS</a>.</p>
-  </aside>
-  <!-- <p class="credit credit-note">Esquema generado desde los planos publicados: dimensiones, aberturas y tabiques. Perfil PGC de 89 mm y montantes a 40,7 cm, como en el manual de armado. La estructura incluye blocking a media altura, cruces de San Andrés en los tramos de muro sin aberturas, strapping horizontal, y refuerzos en los encuentros de muros en L, T y cruz, en ámbar; su disposición es una interpretación del manual y se confirma con los planos de montaje. El monoambiente lleva siding vertical Superboard Cedar sobre placa Superboard de 10 mm, Tyvek y OSB; los modelos de 1 y 2 dormitorios muestran el cerramiento EIFS del catálogo. En el techo, el monoambiente lleva chapa prepintada y los otros dos, hormigón alivianado con pendiente de 1,5 % hacia los puntos de bajada sugeridos (espesor mínimo de unos 50 mm). Los pretiles de esos dos modelos se revisten con OSB, Tyvek para techo, yeso de alta densidad, basecoat y finishcoat, sin EPS. El monoambiente suma babetas laterales y superior, gotero, compriband y esquineros de siding. La terminación interior usa placa de yeso, lana de vidrio R8 y una barrera de vapor, que no figura en los PDF. Los precios publicados corresponden a siding vertical; otras terminaciones se consultan.</p> -->
 </section>
 
 <section class="sec" id="modelos">
@@ -81,7 +63,7 @@
         <div class="model-card-body"><p class="model-type">Esencial</p><h3>Monoambiente</h3><p class="model-dimensions">7,66 × 3,26 m</p>
           <p class="model-description">Un espacio abierto para vivir, trabajar y descansar. Incluye baño independiente y posibilidad de crecimiento.</p>
           <ul class="model-facts"><li>Ambiente principal: 5,83 × 2,98 m · baño: 1,44 × 2,98 m</li><li>Techo inclinado con chapa BC35 · cota máxima: 3,35 m</li><li>Altura interior: 2,40 m · prevé crecimiento</li></ul>
-          <div class="model-card-footer"><p class="price">US$ 6.133<small>+ IVA · 36 cuotas de US$ 170 + IVA<br>Aberturas PVC opcionales: US$ 2.410 + IVA</small></p><button class="btn model-cta" data-open-viewer data-k="mono">Explorar modelo <span aria-hidden="true">↗</span></button></div>
+          <div class="model-card-footer"><p class="price">US$ 6.133<small>+ IVA · 36 cuotas de US$ 170 + IVA<br>Aberturas PVC opcionales: US$ 2.410 + IVA</small></p><a class="btn model-cta" href="max-steel-studio?model=mono&amp;load=1">Explorar modelo <span aria-hidden="true">↗</span></a></div>
         </div>
       </article>
       <article class="model-card model-card--featured">
@@ -89,7 +71,7 @@
         <div class="model-card-body"><p class="model-type">Equilibrio</p><h3>1 dormitorio</h3><p class="model-dimensions">10,45 × 4,46 m</p>
           <p class="model-description">Ambientes definidos con cocina, estar-comedor, dormitorio y baño en una planta compacta.</p>
           <ul class="model-facts"><li>Estar-comedor: 5,83 × 3,84 m · dormitorio: 4,23 × 2,64 m</li><li>Baño: 3,02 × 1,42 m</li><li>Techo plano de hormigón alivianado · cota: 3,20 m</li><li>Altura interior: 2,40 m · pendiente: 1,5 %</li></ul>
-          <div class="model-card-footer"><p class="price">US$ 9.432<small>+ IVA · 36 cuotas de US$ 262 + IVA<br>Aberturas PVC opcionales: US$ 5.953 + IVA</small></p><button class="btn model-cta" data-open-viewer data-k="d1">Explorar modelo <span aria-hidden="true">↗</span></button></div>
+          <div class="model-card-footer"><p class="price">US$ 9.432<small>+ IVA · 36 cuotas de US$ 262 + IVA<br>Aberturas PVC opcionales: US$ 5.953 + IVA</small></p><a class="btn model-cta" href="max-steel-studio?model=d1&amp;load=1">Explorar modelo <span aria-hidden="true">↗</span></a></div>
         </div>
       </article>
       <article class="model-card">
@@ -97,7 +79,7 @@
         <div class="model-card-body"><p class="model-type">Amplitud</p><h3>2 dormitorios</h3><p class="model-dimensions">12,06 × 6,06 m</p>
           <p class="model-description">Más espacio para compartir, con dos dormitorios y un área social integrada.</p>
           <ul class="model-facts"><li>Dos dormitorios: 3,85 × 2,68 m y 3,85 × 2,65 m</li><li>Estar-comedor: 6,31 × 5,08 m · baño: 1,48 × 2,68 m</li><li>Techo plano con dos puntos de bajada · cota: 3,30 m</li><li>Altura interior: 2,40 m</li></ul>
-          <div class="model-card-footer"><p class="price">US$ 14.387<small>+ IVA · 36 cuotas de US$ 400 + IVA<br>Aberturas PVC opcionales: US$ 6.187 + IVA</small></p><button class="btn model-cta" data-open-viewer data-k="d2">Explorar modelo <span aria-hidden="true">↗</span></button></div>
+          <div class="model-card-footer"><p class="price">US$ 14.387<small>+ IVA · 36 cuotas de US$ 400 + IVA<br>Aberturas PVC opcionales: US$ 6.187 + IVA</small></p><a class="btn model-cta" href="max-steel-studio?model=d2&amp;load=1">Explorar modelo <span aria-hidden="true">↗</span></a></div>
         </div>
       </article>
   </div>

@@ -5,6 +5,7 @@ Sitio web estático para presentar modelos de viviendas de steel framing, sus es
 ## Contenido
 
 - `modular-steel.html`: página principal.
+- `max-steel-studio/index.html`: experiencia independiente MAX-STEEL Studio (ruta `/max-steel-studio/`).
 - `assets/`: estilos, scripts, imágenes y contenido técnico de MAX.
 - `models3D/`: modelos GLB y texturas utilizados por el visualizador.
 - `robots.txt`: directivas para rastreadores web.
@@ -20,9 +21,12 @@ python -m http.server 8000
 ```
 
 Luego abre `http://localhost:8000/modular-steel.html`.
+Studio está disponible en `http://localhost:8000/max-steel-studio/`.
 
 El visor 3D carga sus dependencias y el modelo seleccionado cuando se solicita desde la página. El rendimiento de esa vista depende del dispositivo y navegador del visitante.
 
+MAX-STEEL Studio presenta los modelos en una página independiente, con modos de arquitectura, estructura y composición constructiva, controles de visibilidad y datos publicados del proyecto. La vista del terreno es esquemática y no representa ubicaciones reales ni se conecta a mapas o padrones.
+
 ## Publicación
 
-El proyecto puede publicarse como sitio estático en servicios como GitHub Pages o Vercel. Publica el contenido de la raíz del proyecto y conserva las rutas relativas de `assets/` y `models3D/`.
+El proyecto puede publicarse como sitio estático en servicios como GitHub Pages o Vercel. Vercel configura `/max-steel-studio` mediante `vercel.json`; en servidores estáticos se puede acceder como `/max-steel-studio/`. Publica el contenido de la raíz del proyecto y conserva las rutas relativas de `assets/` y `models3D/`.
