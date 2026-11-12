@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/max-steel-studio",
+      "destination": "/max-steel-studio/index.html"
+    }
+  ]
+}

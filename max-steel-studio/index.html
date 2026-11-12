@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es-UY">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MAX-Steel Studio | Diseña y explora tu vivienda</title>
+  <meta name="description" content="Explora los modelos MAX-Steel en 3D, consulta sus componentes y revisa sus especificaciones y valores base publicados.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#101b2b">
+  <link rel="canonical" href="https://maxsteel.com.uy/max-steel-studio">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_UY">
+  <meta property="og:site_name" content="MAX-Steel">
+  <meta property="og:title" content="MAX-Steel Studio | Diseña y explora tu vivienda">
+  <meta property="og:description" content="Explora modelos de vivienda, visualiza su estructura y consulta sus especificaciones en MAX-Steel Studio.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+  <link rel="icon" href="../assets/images/max-steel-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components/studio.css">
+</head>
+<body class="studio-page">
+  <header class="studio-site-header">
+    <a class="studio-brand" href="../modular-steel.html" aria-label="MAX-Steel, página principal">
+      <img src="../assets/images/max-steel-logo.svg" width="720" height="260" alt="MAX-Steel · Constructora · Steel Framing">
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="../modular-steel.html">Inicio</a>
+      <a href="../modular-steel.html#modelos">Modelos</a>
+      <a href="../modular-steel.html#sistema">Tecnología</a>
+      <a class="is-current" href="../max-steel-studio/" aria-current="page">MAX Studio</a>
+      <button type="button" data-assistant-open aria-expanded="false" aria-controls="technical-assistant"><span aria-hidden="true">▤</span> MAX Assistant</button>
+      <a href="../modular-steel.html#contacto">Contacto</a>
+    </nav>
+    <span class="studio-header-prompt">DISEÑA <i>·</i> EXPLORA <i>·</i> CONSTRUYE</span>
+  </header>
+
+  <main class="studio-app" data-studio-mode="architecture">
+    <div class="studio-workspace">
+      <aside class="studio-sidebar studio-sidebar-left" aria-label="Diseño del proyecto">
+        <div class="studio-sidebar-tabs" role="tablist" aria-label="Sección del proyecto">
+          <button type="button" role="tab" id="studio-design-tab" aria-selected="true" aria-controls="studio-design-panel" data-studio-panel-tab="design"><span aria-hidden="true">⌂</span> Diseño</button>
+          <button type="button" role="tab" id="studio-terrain-tab" aria-selected="false" aria-controls="studio-terrain-panel" data-studio-panel-tab="terrain"><span aria-hidden="true">⌖</span> Terreno</button>
+        </div>
+
+        <section id="studio-design-panel" class="studio-sidebar-section" role="tabpanel" aria-labelledby="studio-design-tab" data-studio-panel="design">
+          <div class="studio-section-heading">
+            <div><span class="studio-control-label">PROYECTOS</span><h1>Modelos disponibles</h1></div>
+            <span class="studio-count">03</span>
+          </div>
+          <div class="studio-model-list" role="group" aria-label="Seleccionar modelo">
+            <button type="button" class="studio-model-option v3m" data-m="mono" aria-pressed="false">
+              <span class="studio-model-thumb studio-model-thumb--mono" aria-hidden="true"></span>
+              <span class="studio-model-option-copy"><b>Monoambiente</b><small>Modelo esencial</small></span>
+              <span class="studio-model-area">25 <small>m²</small></span>
+            </button>
+            <button type="button" class="studio-model-option v3m" data-m="d1" aria-pressed="true">
+              <span class="studio-model-thumb studio-model-thumb--one" aria-hidden="true"></span>
+              <span class="studio-model-option-copy"><b>1 dormitorio</b><small>Modelo equilibrio</small></span>
+              <span class="studio-model-area">45 <small>m²</small></span>
+            </button>
+            <button type="button" class="studio-model-option v3m" data-m="d2" aria-pressed="false">
+              <span class="studio-model-thumb studio-model-thumb--two" aria-hidden="true"></span>
+              <span class="studio-model-option-copy"><b>2 dormitorios</b><small>Modelo amplitud</small></span>
+              <span class="studio-model-area">65 <small>m²</small></span>
+            </button>
+          </div>
+          <p class="studio-model-caption">Imágenes ilustrativas; no son renders individuales de cada modelo.</p>
+
+          <div class="studio-section-heading studio-components-heading">
+            <div><span class="studio-control-label">EXPLORACIÓN</span><h2>Componentes</h2></div>
+            <span class="studio-lock" aria-label="La estructura no se puede modificar">⌑</span>
+          </div>
+          <p class="studio-sidebar-copy">Activa u oculta las capas disponibles del modelo.</p>
+          <div class="studio-panel-empty" data-studio-components-empty>
+            <span aria-hidden="true">▦</span><b>Capas del proyecto</b>
+            <p>Carga el modelo para explorar sus componentes.</p>
+          </div>
+          <div class="v3l" id="v3l" role="group" aria-label="Capas y componentes visibles"></div>
+          <p class="studio-sidebar-footnote">La estructura del sistema se presenta como referencia y no puede modificarse aquí.</p>
+        </section>
+
+        <section id="studio-terrain-panel" class="studio-sidebar-section" role="tabpanel" aria-labelledby="studio-terrain-tab" data-studio-panel="terrain" hidden>
+          <div class="studio-section-heading">
+            <div><span class="studio-control-label">UBICACIÓN</span><h1>Tu terreno</h1></div>
+            <span class="studio-count">—</span>
+          </div>
+          <div class="studio-terrain-notice">
+            <span aria-hidden="true">⌖</span>
+            <h2>Vinculación de terrenos</h2>
+            <p>La búsqueda de padrones y la conexión con mapas todavía no están disponibles en esta vista previa.</p>
+            <a href="../modular-steel.html#contacto">Consultar con MAX-Steel <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="studio-sidebar-footnote">No ingreses datos personales o padrones: este prototipo no consulta ni guarda ubicaciones.</p>
+        </section>
+      </aside>
+
+      <section class="studio-viewer" aria-label="Vista del proyecto">
+        <div class="studio-viewer-toolbar">
+          <div class="studio-project-title"><span class="studio-project-mark" aria-hidden="true">M</span><span><b>MAX-STEEL STUDIO</b><small data-studio-model-label>1 dormitorio · 45 m²</small></span></div>
+          <div class="studio-view-modes" role="group" aria-label="Modo de visualización">
+            <button type="button" data-studio-view="architecture" aria-pressed="true"><span aria-hidden="true">⌂</span> Arquitectura</button>
+            <button type="button" data-studio-view="structure" aria-pressed="false"><span aria-hidden="true">▦</span> Estructura</button>
+            <button type="button" data-studio-view="composition" aria-pressed="false"><span aria-hidden="true">▤</span> Composición</button>
+          </div>
+          <span class="studio-status"><i aria-hidden="true"></i> <span data-studio-view-note>Volumen y terminaciones</span></span>
+        </div>
+
+        <div class="studio-canvas-wrap">
+          <div class="studio-canvas v3d" id="v3d" role="region" aria-label="Visualizador 3D interactivo">
+            <div class="studio-canvas-empty v3msg" id="v3msg" role="status" aria-live="polite">
+              <span class="studio-canvas-kicker">VISTA INTERACTIVA</span>
+              <h2>Explora tu próximo espacio.</h2>
+              <p>El modelo 3D se descarga cuando eliges cargarlo. Arrastra para orbitar y usa la rueda para acercar.</p>
+              <button type="button" class="studio-primary-button" data-open-viewer>Cargar modelo 3D <span aria-hidden="true">↗</span></button>
+            </div>
+            <span class="studio-canvas-label" aria-hidden="true">VISTA 3D <i>·</i> MODELO DE REFERENCIA</span>
+          </div>
+          <div class="studio-viewer-controls">
+            <label class="studio-cut-control"><span>Corte horizontal</span><input type="range" id="v3cut" min="0.3" max="3.5" step="0.05" value="3.5" aria-label="Altura del corte"><output id="v3o" class="mono">sin corte</output></label>
+            <button type="button" class="studio-tool-button" id="v3auto" aria-pressed="false"><span aria-hidden="true">↻</span> Girar solo</button>
+            <span class="studio-orbit-hint">Arrastra para orbitar <i>·</i> rueda para zoom</span>
+          </div>
+        </div>
+        <p class="studio-viewer-disclaimer">Visualización informativa. No constituye documentación de obra ni sustituye una validación técnica profesional.</p>
+      </section>
+
+      <aside class="studio-sidebar studio-sidebar-right" aria-label="Información del terreno">
+        <div class="studio-right-heading"><div><span class="studio-control-label">PROYECTO</span><h2>Terreno</h2></div><button type="button" class="studio-icon-button" data-studio-panel-tab="terrain" aria-label="Ver información de terreno">⌖</button></div>
+        <div class="studio-map-search" aria-disabled="true"><span aria-hidden="true">⌕</span><span>Buscar padrón, localidad o dirección…</span><span class="studio-map-pin" aria-hidden="true">⌖</span></div>
+        <div class="studio-map" role="img" aria-label="Esquema ilustrativo de parcelas; no representa una ubicación real">
+          <svg viewBox="0 0 360 360" aria-hidden="true" focusable="false">
+            <path class="map-road" d="M-25 300 390 216M64-20l72 405M-15 118l393-90M242-15l-40 390M-25 229l390-88"/>
+            <path class="map-lot" d="m60 50 125-27 21 104-125 27zM211 12l111-24 23 103-112 25zM95 166l125-28 25 115-130 28zM237 139l106-24 27 119-108 24zM-5 34 48 22l24 112-52 11zM-4 291l122-27 23 92-123 29z"/>
+            <path class="map-highlight" d="m108 166 112-26 24 113-112 27z"/>
+            <circle class="map-marker" cx="170" cy="210" r="8"/><circle class="map-marker-pulse" cx="170" cy="210" r="15"/>
+          </svg>
+          <span class="studio-map-caption">ESQUEMA ILUSTRATIVO</span>
+        </div>
+        <div class="studio-terrain-summary"><span class="studio-empty-icon" aria-hidden="true">⌖</span><b>Sin terreno seleccionado</b><p>Agrega la ubicación para evaluar orientación, accesos y condiciones del sitio.</p></div>
+        <div class="studio-terrain-transport"><div class="studio-mini-heading"><span aria-hidden="true">↗</span><b>Logística del proyecto</b></div><p>La distancia y el costo de transporte se estiman una vez definida la ubicación.</p><button type="button" data-studio-panel-tab="terrain">Consultar opciones <span aria-hidden="true">→</span></button></div>
+        <p class="studio-map-disclaimer">El esquema no representa un padrón ni información geográfica real.</p>
+      </aside>
+
+      <section class="studio-project-dock" aria-label="Resumen del proyecto">
+        <div class="studio-dock-tabs" role="tablist" aria-label="Información del proyecto">
+          <button type="button" role="tab" id="summary-project-tab" aria-selected="true" aria-controls="summary-project" data-studio-summary-tab="project"><span aria-hidden="true">▤</span> Resumen del proyecto</button>
+          <button type="button" role="tab" id="summary-materials-tab" aria-selected="false" aria-controls="summary-materials" data-studio-summary-tab="materials"><span aria-hidden="true">◈</span> Materiales</button>
+          <button type="button" role="tab" id="summary-specs-tab" aria-selected="false" aria-controls="summary-specs" data-studio-summary-tab="specs"><span aria-hidden="true">☷</span> Especificaciones</button>
+          <button type="button" role="tab" id="summary-budget-tab" aria-selected="false" aria-controls="summary-budget" data-studio-summary-tab="budget"><span aria-hidden="true">$</span> Presupuesto</button>
+        </div>
+        <div class="studio-dock-content">
+          <section class="studio-summary-panel studio-summary-overview" id="summary-project" role="tabpanel" aria-labelledby="summary-project-tab" data-summary-panel="project">
+            <img class="studio-summary-image" src="../assets/images/summer-house-golden-hour.jpg" alt="" width="2200" height="1467" loading="lazy">
+            <div class="studio-summary-description"><span class="studio-control-label">VIVIENDA MODULAR</span><h2 data-studio-property="name">1 dormitorio</h2><p data-studio-property="summary">Diseño funcional con ambientes definidos para vivir y compartir.</p></div>
+            <dl class="studio-summary-facts"><div><dt>Superficie</dt><dd><span data-studio-property="area">45</span> m²</dd></div><div><dt>Dimensiones</dt><dd data-studio-property="dimensions">10,45 × 4,46 m</dd></div></dl>
+            <div class="studio-summary-price"><span class="studio-control-label">VALOR BASE PUBLICADO</span><b data-studio-property="price">US$ 9.432</b><small>+ IVA · sujeto a confirmación comercial</small></div>
+          </section>
+          <section class="studio-summary-panel studio-summary-details" id="summary-materials" role="tabpanel" aria-labelledby="summary-materials-tab" data-summary-panel="materials" hidden>
+            <div><span class="studio-control-label">TERMINACIÓN PUBLICADA</span><h2>Siding vertical</h2><p>Los precios publicados corresponden a esta terminación. Otras alternativas requieren consulta y recotización.</p></div>
+            <div><span class="studio-control-label">ABERTURAS OPCIONALES</span><b data-studio-property="windows">US$ 5.953 + IVA</b><p>La opción de PVC se cotiza por separado.</p></div>
+          </section>
+          <section class="studio-summary-panel studio-summary-details" id="summary-specs" role="tabpanel" aria-labelledby="summary-specs-tab" data-summary-panel="specs" hidden>
+            <div><span class="studio-control-label">DISTRIBUCIÓN</span><h2 data-studio-property="rooms">Estar-comedor · 1 dormitorio · baño</h2><p>Medidas y distribución según la información publicada del modelo.</p></div>
+            <div><span class="studio-control-label">CUBIERTA</span><b data-studio-property="roof">Hormigón alivianado · pendiente 1,5 %</b><p>Validar especificaciones del proyecto antes de construir.</p></div>
+          </section>
+          <section class="studio-summary-panel studio-summary-details studio-summary-budget" id="summary-budget" role="tabpanel" aria-labelledby="summary-budget-tab" data-summary-panel="budget" hidden>
+            <div><span class="studio-control-label">INVERSIÓN BASE PUBLICADA</span><h2 data-studio-property="price">US$ 9.432</h2><p>Más IVA. Sujeto a confirmación técnica y condiciones comerciales vigentes.</p></div>
+            <div><span class="studio-control-label">FINANCIACIÓN PUBLICADA</span><b data-studio-property="payment">36 cuotas de US$ 262 + IVA</b><p>Consulta disponibilidad y condiciones actuales.</p></div>
+          </section>
+          <div class="studio-dock-actions"><span class="studio-ready"><i aria-hidden="true"></i> Proyecto listo para explorar</span><p>Solicita una cotización con el modelo seleccionado.</p><a class="studio-primary-button" data-studio-quote href="mailto:contacto@maxsteel.com.uy?subject=Cotizaci%C3%B3n%20MAX-Steel">Solicitar cotización <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <p class="studio-pricing-disclaimer">Valores base publicados sujetos a actualización. La visualización y los cambios de visibilidad no alteran el presupuesto ni reemplazan planos o cálculo profesional.</p>
+      </section>
+    </div>
+  </main>
+
+  <button class="assistant-toggle" id="assistant-toggle" type="button" aria-expanded="false" aria-controls="technical-assistant">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.86L4 21l4.8-1.6A8.5 8.5 0 1 0 12 3.5Z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg>
+    <span>Preguntar a MAX</span>
+  </button>
+  <aside class="assistant-panel" id="technical-assistant" role="dialog" aria-labelledby="assistant-title" aria-describedby="assistant-description" hidden>
+    <div class="assistant-header">
+      <div class="assistant-identity"><span class="assistant-avatar" aria-hidden="true">M</span><div><h2 id="assistant-title">MAX</h2><p id="assistant-description"><span class="assistant-status" aria-hidden="true"></span>Asistente técnico · en línea</p></div></div>
+      <button class="assistant-close" id="assistant-close" type="button" aria-label="Cerrar chat"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="assistant-disclaimer">Respuestas basadas en la información técnica del sitio. No reemplazan planos ni cálculos profesionales.</div>
+    <div class="assistant-messages" id="assistant-messages" role="log" aria-live="polite" aria-relevant="additions">
+      <div class="assistant-welcome"><p class="assistant-message assistant-message--answer">¡Hola! Soy MAX. Puedo responder consultas técnicas y calcular superficies de ambientes o pesos estimados con los datos publicados.</p>
+        <div class="assistant-suggestions" aria-label="Preguntas frecuentes"><button type="button" data-assistant-question="¿Qué perfil PGC se utiliza?">Perfiles PGC</button><button type="button" data-assistant-question="¿Qué capas tiene el entrepiso cerámico?">Capas del entrepiso</button><button type="button" data-assistant-question="¿Cuántos m² tiene el baño del monoambiente?">Área del baño</button><button type="button" data-assistant-question="¿Cuánto pesan 20 m² de muro siding?">Estimar peso</button></div>
+      </div>
+    </div>
+    <form class="assistant-form" id="assistant-form"><label class="sr-only" for="assistant-question">Escribe una consulta técnica</label><input id="assistant-question" name="question" type="text" maxlength="500" autocomplete="off" placeholder="Escribe una consulta técnica…" required><button type="submit" aria-label="Enviar consulta"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 3-7.2 18-3.9-7.9L2 9.2 21 3Z"/><path d="M9.9 13.1 15 8"/></svg></button></form>
+    <p class="assistant-privacy">Privado y local · tus consultas no se envían a una IA ni a un servidor.</p>
+  </aside>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>
