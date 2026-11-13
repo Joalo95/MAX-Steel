@@ -38,13 +38,17 @@ body.studio-page {
 
 .studio-brand {
   display: block;
-  width: min(100%, 164px);
+  width: 120px;
+  height: 80px;
 }
 
 .studio-brand img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 120px;
+  height: 80px;
+  background: transparent;
+  object-fit: contain;
+  object-position: center;
 }
 
 .studio-site-header nav {
@@ -1290,7 +1294,8 @@ body.studio-page {
   }
 
   .studio-brand {
-    width: 132px;
+    width: 120px;
+    height: 80px;
   }
 
   .studio-site-header nav {

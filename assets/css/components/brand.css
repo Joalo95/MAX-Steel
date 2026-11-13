@@ -37,8 +37,11 @@ h1, h2, h3, .btn, .logo {
 
 .logo-image {
   display: block;
-  width: clamp(146px, 16vw, 210px);
-  height: auto;
+  width: 120px;
+  height: 80px;
+  background: transparent;
+  object-fit: contain;
+  object-position: center;
 }
 
 .btn {
@@ -109,7 +112,8 @@ footer {
 }
 
 .site-header.is-scrolled .logo-image {
-  width: clamp(140px, 14vw, 184px);
+  width: 120px;
+  height: 80px;
 }
 
 @media (prefers-reduced-motion: reduce) {
